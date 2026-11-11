@@ -1,0 +1,23 @@
+{
+  "cafe": {
+    "name": "CafeBot Artisan Roastery",
+    "currency": "USD"
+  },
+  "categories": [
+    {
+      "id": "espresso",
+      "name": "Espresso & Coffee",
+      "items": []
+    },
+    {
+      "id": "tea",
+      "name": "Teas & Botanicals",
+      "items": []
+    },
+    {
+      "id": "bakery",
+      "name": "Fresh Bakery",
+      "items": []
+    }
+  ]
+}

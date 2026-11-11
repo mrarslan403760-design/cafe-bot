@@ -1,0 +1,6 @@
+{
+  "name": "CafeBot",
+  "description": "Smart café web app project structure with frontend, backend, data, and prompts modules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

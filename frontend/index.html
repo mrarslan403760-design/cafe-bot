@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CafeBot - Artisanal Roastery & Café</title>
+    <meta name="description" content="Artisanal specialty coffee roastery, handcrafted seasonal beverages, and fresh morning pastries." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 1. Header (Strict Top Bar Contract: Brand Wordmark, Nav Links, Primary CTA) -->
+    <header class="site-header">
+      <div class="container header-container">
+        <!-- Zone 1: Single text element wordmark -->
+        <a href="#top" class="brand-link" aria-label="CafeBot Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+            <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+            <line x1="6" y1="2" x2="6" y2="4"></line>
+            <line x1="10" y1="2" x2="10" y2="4"></line>
+            <line x1="14" y1="2" x2="14" y2="4"></line>
+          </svg>
+          <span>CafeBot</span>
+        </a>
+
+        <!-- Zone 2: Concise single-line navigation links -->
+        <nav class="main-nav" aria-label="Main Navigation">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#hours" class="nav-link">Hours & Location</a>
+          <a href="#sourcing" class="nav-link">Sourcing</a>
+        </nav>
+
+        <!-- Zone 3: 1 Primary Action -->
+        <div class="header-actions">
+          <a href="#menu" class="btn btn-primary">View Offerings</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- 2. Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <span class="section-kicker">Micro-Roastery & Café</span>
+              <h1 id="hero-heading" class="hero-headline">Handcrafted coffee brewed with intention.</h1>
+              <p class="hero-description">
+                Direct-trade single origin beans roasted in small batches weekly. Experience thoughtfully calibrated pour-overs, velvety espresso, and warm botanical infusions.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#menu" class="btn btn-primary">Explore Daily Menu</a>
+                <a href="#hours" class="btn btn-secondary">Visit Our Roastery</a>
+              </div>
+              <div class="hero-trust-row">
+                <div class="trust-item">
+                  <span class="trust-dot" aria-hidden="true"></span>
+                  <span>100% Single-Origin Lots</span>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-dot" aria-hidden="true"></span>
+                  <span>Roasted Fresh Weekly</span>
+                </div>
+                <div class="trust-item">
+                  <span class="trust-dot" aria-hidden="true"></span>
+                  <span>Direct-Trade Certified</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-media">
+              <img
+                src="/src/assets/images/hero_cafe_ambiance_1794308226014.jpg"
+                alt="Sunlit modern CafeBot coffee shop interior with natural oak counter and espresso equipment"
+                class="hero-img"
+                loading="eager"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. About Section -->
+      <section id="about" class="about-section" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-media">
+              <img
+                src="/src/assets/images/about_coffee_craft_1794308226409.jpg"
+                alt="Barista precision pour-over brewing technique with ceramic dripper and gooseneck kettle"
+                class="about-img"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <div class="about-content">
+              <span class="section-kicker">Our Craft & Heritage</span>
+              <h2 id="about-heading" class="section-title">Rooted in precision, committed to origin.</h2>
+              <p class="about-prose">
+                At CafeBot, coffee is not just a morning ritual; it is a celebration of agricultural craftsmanship. We collaborate directly with high-elevation farming cooperatives in Huehuetenango, Yirgacheffe, and Huila to source seasonal green coffees with distinctive flavor signatures.
+              </p>
+              <p class="about-prose">
+                Each bean profile is roasted in small 12-kilogram batches, monitored second-by-second to unlock delicate floral aromatics, lively fruit acidity, and deep caramelized undertones.
+              </p>
+              <div id="sourcing" class="about-values-grid">
+                <div class="value-card">
+                  <h4>Transparent Sourcing</h4>
+                  <p>Guaranteed premiums paid directly to smallholder farming families.</p>
+                </div>
+                <div class="value-card">
+                  <h4>Micro-Batch Calibrations</h4>
+                  <p>Daily espresso dialectics dialed in for optimal extraction ratios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Menu Section (Product Cards: Name, Price, Description) -->
+      <section id="menu" class="menu-section" aria-labelledby="menu-heading">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="section-kicker">Curated Offerings</span>
+            <h2 id="menu-heading" class="section-title">Seasonal Drinks & Pastries</h2>
+            <p class="section-subtitle">
+              Every beverage is hand-pulled on our custom pressure-profile machine, paired with organic dairy or house-made oat and almond milks.
+            </p>
+          </div>
+
+          <div class="menu-grid">
+            <!-- Product Card 1 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="/src/assets/images/menu_signature_latte_1794308227684.jpg"
+                  alt="Honey Cinnamon Flat White with rosetta latte art in speckled ceramic cup"
+                  class="product-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span>Espresso Specialty</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>House Favorite</span>
+                </div>
+                <div class="product-header">
+                  <h3 class="product-title">Honey Cinnamon Flat White</h3>
+                  <span class="product-price tabular-nums">$5.75</span>
+                </div>
+                <p class="product-description">
+                  Double ristretto pulled over raw wildflower honey, steamed velvety oat milk, and freshly ground Ceylon cinnamon bark.
+                </p>
+                <div class="product-specs">
+                  <span>8 oz</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Light Roast</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Oat Milk</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 2 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="/src/assets/images/menu_cold_brew_1794308229028.jpg"
+                  alt="Single-Origin Nitro Cold Brew in fluted glass with clear ice"
+                  class="product-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span>Cold Coffee</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Slow Drip</span>
+                </div>
+                <div class="product-header">
+                  <h3 class="product-title">Single-Origin Slow Cold Brew</h3>
+                  <span class="product-price tabular-nums">$5.25</span>
+                </div>
+                <p class="product-description">
+                  Steeped cold for 20 hours using washed Ethiopian Yirgacheffe beans. Crisp notes of bergamot, candied peach, and dark cocoa nibs.
+                </p>
+                <div class="product-specs">
+                  <span>12 oz</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Bright Citrus</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Over Clear Ice</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 3 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="/src/assets/images/menu_artisan_pastry_1794308229196.jpg"
+                  alt="Golden flaky artisan croissant and cardamom morning bun"
+                  class="product-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span>Bakery</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Fresh Daily</span>
+                </div>
+                <div class="product-header">
+                  <h3 class="product-title">Cardamom Morning Bun & Croissant</h3>
+                  <span class="product-price tabular-nums">$4.85</span>
+                </div>
+                <p class="product-description">
+                  Laminated French butter pastry dough twisted with fragrant crushed cardamom seeds, vanilla bean sugar, and caramelized edges.
+                </p>
+                <div class="product-specs">
+                  <span>Baked 6:00 AM</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>AOP Normandy Butter</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 4 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="/src/assets/images/about_coffee_craft_1794308226409.jpg"
+                  alt="Hand-poured single origin filter brew"
+                  class="product-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span>Filter Pour-Over</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Single-Lot</span>
+                </div>
+                <div class="product-header">
+                  <h3 class="product-title">Kalita Wave Geisha Pour-Over</h3>
+                  <span class="product-price tabular-nums">$6.50</span>
+                </div>
+                <p class="product-description">
+                  Panama Boquete Geisha variety, carefully hand-dripped at 93°C. Jasmine blossom fragrance, lemongrass, and sweet clover honey finish.
+                </p>
+                <div class="product-specs">
+                  <span>10 oz</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Pour-to-Order</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Floral Profile</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 5 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="/src/assets/images/menu_signature_latte_1794308227684.jpg"
+                  alt="Vanilla bean cortado in small glass"
+                  class="product-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span>Espresso Specialty</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Classic Ratio</span>
+                </div>
+                <div class="product-header">
+                  <h3 class="product-title">Madagascar Vanilla Cortado</h3>
+                  <span class="product-price tabular-nums">$4.95</span>
+                </div>
+                <p class="product-description">
+                  Equal parts concentrated espresso and lightly textured whole milk, infused with house-cured organic Bourbon vanilla bean syrup.
+                </p>
+                <div class="product-specs">
+                  <span>4.5 oz</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Balanced 1:1</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Low Acidity</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Card 6 -->
+            <article class="product-card">
+              <div class="product-media">
+                <img
+                  src="/src/assets/images/menu_artisan_pastry_1794308229196.jpg"
+                  alt="Brown butter almond pastry"
+                  class="product-img"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span>Bakery</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Warm Pastry</span>
+                </div>
+                <div class="product-header">
+                  <h3 class="product-title">Brown Butter Almond Brioche</h3>
+                  <span class="product-price tabular-nums">$5.10</span>
+                </div>
+                <p class="product-description">
+                  Rich brioche soaked in roasted almond frangipane cream, topped with toasted sliced almonds, sea salt crystals, and orange zest.
+                </p>
+                <div class="product-specs">
+                  <span>Artisan Baked</span>
+                  <span aria-hidden="true">&middot;</span>
+                  <span>Vegetarian</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Hours and Location Section -->
+      <section id="hours" class="location-section" aria-labelledby="location-heading">
+        <div class="container">
+          <div class="section-header-centered">
+            <span class="section-kicker">Find Us</span>
+            <h2 id="location-heading" class="section-title">Roastery, Tasting Room & Hours</h2>
+            <p class="section-subtitle">
+              Located in the heart of the historic arts district. Drop in for quiet morning work, espresso flights, or fresh roasted beans to go.
+            </p>
+          </div>
+
+          <div class="location-grid">
+            <!-- Location Card -->
+            <div class="location-card">
+              <div class="card-heading-group">
+                <h3 class="card-title">Roastery & Tasting Room</h3>
+                <p class="card-subtitle">Historic Mill District</p>
+              </div>
+
+              <div class="address-block">
+                <div class="address-line"><strong>CafeBot Roastery</strong></div>
+                <div class="address-line">428 Roaster's Way, Suite 102</div>
+                <div class="address-line">Portland, OR 97209</div>
+              </div>
+
+              <div class="location-details">
+                <p><strong>Transit:</strong> 2 blocks east of Central Streetcar Station (Line B)</p>
+                <p><strong>Parking:</strong> Dedicated bicycle parking racks and 2-hour street parking on 4th Ave</p>
+                <p><strong>Contact:</strong> hello@cafebot.coffee &middot; (503) 555-0192</p>
+              </div>
+
+              <div class="card-footer-action">
+                <a
+                  href="https://maps.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  Get Directions &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Hours Card -->
+            <div class="hours-card">
+              <div class="card-heading-group">
+                <h3 class="card-title">Operating Schedule</h3>
+                <p class="card-subtitle">Fresh drip brewed all day</p>
+              </div>
+
+              <ul class="hours-list">
+                <li class="hours-row">
+                  <span class="hours-day">Monday &ndash; Thursday</span>
+                  <span class="hours-time">07:00 &ndash; 18:00</span>
+                </li>
+                <li class="hours-row">
+                  <span class="hours-day">Friday</span>
+                  <span class="hours-time">07:00 &ndash; 19:00</span>
+                </li>
+                <li class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">08:00 &ndash; 19:00</span>
+                </li>
+                <li class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">08:00 &ndash; 17:00</span>
+                </li>
+              </ul>
+
+              <p class="hours-note">
+                Kitchen and fresh pastry service runs until 15:00 daily. Espresso bar and retail bean counter remain open until close.
+              </p>
+
+              <div class="card-footer-action">
+                <span class="text-xs text-stone-500 font-mono">
+                  * Roastery tours conducted Saturdays at 10:00 AM
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <span class="footer-brand">CafeBot</span>
+            <p class="footer-tagline">
+              Dedicated to small-batch specialty coffee roasting, seasonal farm partnerships, and warm neighborhood hospitality.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul class="footer-nav">
+              <li><a href="#about">Our Story</a></li>
+              <li><a href="#menu">Daily Menu</a></li>
+              <li><a href="#hours">Hours & Location</a></li>
+              <li><a href="#top">Back to Top</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Offerings</h5>
+            <ul class="footer-nav">
+              <li><a href="#menu">Espresso Classics</a></li>
+              <li><a href="#menu">Pour-Over Bar</a></li>
+              <li><a href="#menu">Cold Brews</a></li>
+              <li><a href="#menu">Morning Bakery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Visit & Inquiries</h5>
+            <ul class="footer-nav">
+              <li><a href="mailto:hello@cafebot.coffee">hello@cafebot.coffee</a></li>
+              <li><a href="tel:5035550192">(503) 555-0192</a></li>
+              <li><a href="#hours">428 Roaster's Way, Portland</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 CafeBot Roastery Co. All rights reserved.</p>
+          <p>Handcrafted with care &middot; Single-origin direct trade</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating CafeBot Chat Widget -->
+    <div id="chat-widget-container">
+      <!-- Slide-Up Window -->
+      <div id="chat-window" class="chat-window" aria-hidden="true">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <div class="chat-avatar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+                <line x1="6" y1="2" x2="6" y2="4"></line>
+                <line x1="10" y1="2" x2="10" y2="4"></line>
+                <line x1="14" y1="2" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <div>
+              <div class="chat-title-row">
+                <h4>CafeBot</h4>
+                <span class="chat-badge">Concierge</span>
+              </div>
+              <p class="chat-subtitle">Artisan Café Assistant</p>
+            </div>
+          </div>
+          <button id="chat-close-btn" class="chat-close-btn" aria-label="Close Chat">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="chat-quick-chips">
+          <span class="quick-chip-label">Ask:</span>
+          <button class="quick-chip" data-question="What's your freshest roast today?">Today's Roast</button>
+          <button class="quick-chip" data-question="Tell me about the cold brew">Cold Brew</button>
+          <button class="quick-chip" data-question="What are your hours?">Store Hours</button>
+        </div>
+
+        <div id="chat-messages" class="chat-messages">
+          <div class="chat-message bot">
+            <div class="message-bubble">
+              Welcome to CafeBot Roastery! Feel free to ask about our single-origin coffees, brewing methods, or seasonal pastries.
+            </div>
+            <span class="message-time">Just now</span>
+          </div>
+        </div>
+
+        <form id="chat-form" class="chat-input-form">
+          <input
+            type="text"
+            id="chat-input"
+            class="chat-input"
+            placeholder="Ask CafeBot about coffee, hours..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="chat-send-btn" class="chat-send-btn" aria-label="Send message">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Floating Launch Button -->
+      <button id="chat-toggle-btn" class="chat-toggle-btn" aria-label="Open CafeBot chat">
+        <svg class="toggle-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
+          <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
+          <line x1="6" y1="2" x2="6" y2="4"></line>
+          <line x1="10" y1="2" x2="10" y2="4"></line>
+          <line x1="14" y1="2" x2="14" y2="4"></line>
+        </svg>
+        <span class="toggle-label">Chat with CafeBot</span>
+      </button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
